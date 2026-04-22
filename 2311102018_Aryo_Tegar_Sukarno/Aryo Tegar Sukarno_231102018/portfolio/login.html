@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rynzee Dev Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="login-container">
+      <div class="login-card">
+        <div class="brand-header">
+          <i class="bx bx-code-alt brand-icon"></i>
+          <h2>Rynzee Login</h2>
+          <p>sign in to your developer space</p>
+        </div>
+
+        <form action="Login.php" method="post">
+          <div class="input-group">
+            <i class="bx bx-user"></i>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="Username or email"
+              required
+              autocomplete="username"
+              aria-label="Username"
+            />
+          </div>
+
+          <div class="input-group">
+            <i class="bx bx-lock-alt"></i>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Password"
+              required
+              autocomplete="current-password"
+              aria-label="Password"
+            />
+            <i class="bx bx-show toggle-password"></i>
+          </div>
+
+          <div class="options-row">
+            <label class="checkbox-label">
+              <input type="checkbox" name="remember" /> Keep me signed in
+            </label>
+            <a href="#" class="forgot-link">Forgot password?</a>
+          </div>
+
+          <button type="submit" class="login-btn">
+            <span>Login</span> <i class="bx bx-log-in-circle"></i>
+          </button>
+
+          <div class="signup-prompt">
+            Don't have an account?<a href="#"> Create account</a>
+          </div>
+        </form>
+      </div>
+      <div class="footer-note">
+        <i class="bx bx-shield-alt-2"></i> Secure platform | Rynzee Dev
+        Portfolio
+      </div>
+    </div>
+  </body>
+</html>
