@@ -23,7 +23,7 @@
         <h2 class="mb-4">Contact Me</h2>
         <p>If you'd like to get in touch, feel free to reach out via email at <a href="mailto:codewithrafli@gmail.com">
                 codewithrafli@gmail.com
-            </a> or connect with me on <a href="https://www.linkedin.com/in/rafli-aziz/" target="_blank">LinkedIn</a>.</p>
+            </a> or connect with me on <a href="https://www.linkedin.com/in/rafliaf/" target="_blank">LinkedIn</a>.</p>
     </div>
 
 
