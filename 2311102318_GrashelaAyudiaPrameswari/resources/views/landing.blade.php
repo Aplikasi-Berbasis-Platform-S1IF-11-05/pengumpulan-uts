@@ -28,7 +28,7 @@
         <div class="card-body">
             <h4 class="card-title">Contact Me</h4>
             <ul class="list-inline mb-0">
-                <li class="list-inline-item"><strong>Email:</strong> <a href="mailto:grashelaayudia19@gmail.com">grashelaayudia19@gmail.com</a></li>
+                <li class="list-inline-item"><strong>Email:</strong> <a href="mailto:grashela.ayudia@example.com">grashela.ayudia@example.com</a></li>
                 <li class="list-inline-item">|</li>
                 <li class="list-inline-item"><strong>LinkedIn:</strong> <a href="#">grashela-ayudia</a></li>
             </ul>
