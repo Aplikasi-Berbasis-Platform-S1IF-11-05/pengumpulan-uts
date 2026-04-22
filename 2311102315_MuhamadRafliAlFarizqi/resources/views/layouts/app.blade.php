@@ -18,14 +18,33 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link {{ request()->routeIs('admin.skills.*') ? 'active' : '' }}"
-                            href="{{ route('admin.skills.index') }}">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link {{ request()->routeIs('admin.achievements.*') ? 'active' : '' }}"
-                            href="{{ route('admin.achievements.index') }}">Achievements</a>
-                    </li>
+                    @auth
+                        <li class="nav-item">
+                            <a class="nav-link {{ request()->routeIs('admin.skills.*') ? 'active' : '' }}"
+                                href="{{ route('admin.skills.index') }}">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {{ request()->routeIs('admin.achievements.*') ? 'active' : '' }}"
+                                href="{{ route('admin.achievements.index') }}">Achievements</a>
+                        </li>
+                    @endauth
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    @auth
+                        <li class="nav-item">
+                            <span class="nav-link text-light">{{ Auth::user()->name }}</span>
+                        </li>
+                        <li class="nav-item">
+                            <form action="{{ route('logout') }}" method="POST" class="d-inline">
+                                @csrf
+                                <button type="submit" class="nav-link btn btn-link text-light">Logout</button>
+                            </form>
+                        </li>
+                    @else
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('login') }}">Login</a>
+                        </li>
+                    @endauth
                 </ul>
             </div>
         </div>

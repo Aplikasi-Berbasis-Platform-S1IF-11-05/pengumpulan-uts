@@ -10,7 +10,15 @@
                     style="max-width: 200px;">
                 <h1 class="display-4">Welcome to My Portfolio</h1>
                 <p class="lead">Showcasing my skills and achievements</p>
-                <a href="{{ route('admin.skills.index') }}" class="btn btn-primary btn-lg">View Admin Panel</a>
+                @auth
+                    <a href="{{ route('admin.skills.index') }}" class="btn btn-primary btn-lg me-2">Admin Panel</a>
+                    <form action="{{ route('logout') }}" method="POST" class="d-inline">
+                        @csrf
+                        <button type="submit" class="btn btn-outline-secondary btn-lg">Logout</button>
+                    </form>
+                @else
+                    <a href="{{ route('login') }}" class="btn btn-outline-primary btn-lg">Login</a>
+                @endauth
             </div>
         </div>
     </div>
@@ -23,7 +31,7 @@
         <h2 class="mb-4">Contact Me</h2>
         <p>If you'd like to get in touch, feel free to reach out via email at <a href="mailto:codewithrafli@gmail.com">
                 codewithrafli@gmail.com
-            </a> or connect with me on <a href="https://www.linkedin.com/in/rafli-aziz/" target="_blank">LinkedIn</a>.</p>
+            </a> or connect with me on <a href="https://www.linkedin.com/in/rafliaf/" target="_blank">LinkedIn</a>.</p>
     </div>
 
 
